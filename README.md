@@ -1,5 +1,5 @@
 Dataset : https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified  
-Notebook is in the repo
+Notebook : https://github.com/raacee/project_pda/blob/main/Project_PDA.ipynb
 
 # Python data analysis project
 ## Psychologic tendency to try drugs
