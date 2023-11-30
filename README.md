@@ -1,5 +1,5 @@
 Dataset : https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified  
-Notebook : https://github.com/raacee/project_pda/blob/main/Project_PDA.ipynb
+Notebook : https://github.com/raacee/project_pda/blob/main/Project_PDA.ipynb  
 PPT : https://github.com/raacee/project_pda/blob/main/PDA_PPT_DAMECHLI_Racel_CARON_Clement_CORLAY_Anahide.pdf  
 
 # Python data analysis project
