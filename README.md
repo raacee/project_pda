@@ -13,7 +13,7 @@ More precisely, the drug features represent the last time someone has used a dru
 - agreeableness (friendly/compassionate vs. critical/rational)
 - neuroticism (sensitive/nervous vs. resilient/confident)
 - openness to experience (inventive/curious vs. consistent/cautious)
-- extraversion (outgoing/energetic vs. solitary/reserved)
+- extraversion (outgoing/energetic vs. solitary/reserved)  
 It also had two more points :
 - Sensation seekingness
 - Impulsivity
