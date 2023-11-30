@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Python data analysis : prediction model api</h1>
+    <h3>Enter personality scores and psychiatric scores</h3>
+
+    <form enctype="multipart/form-data">
+      <div class="form-element">
+        <p>Age</p>
+        <input type="number" placeholder="0" name="age" value="0"/>
+      </div>
+
+      <div class="form-element">
+        <p>Gender</p>
+        <input type="number" placeholder="0" name="gender" value="0"/>
+      </div>
+
+      <div class="form-element">
+        <p>Education</p>
+        <input type="number" placeholder="0" name="education" value="0"/>
+      </div>
+
+      <div class="form-element">
+        <p>Nscore</p>
+        <input type="number" placeholder="0" name="nscore" value="0"/>
+      </div>
+
+      <div class="form-element">
+        <p>Escore</p>
+        <input type="number" placeholder="0" name="escore" value="0"/>
+      </div>
+
+      <div class="form-element">
+        <p>Ascore</p>
+        <input type="number" placeholder="0" name="ascore" value="0"/>
+      </div>
+
+      <div class="form-element">
+        <p>Oscore</p>
+        <input type="number" placeholder="0" name="oscore" value="0"/>
+      </div>
+
+      <div class="form-element">
+        <p>Cscore</p>
+        <input type="number" placeholder="0" name="cscore" value="0"/>
+      </div>
+
+      <div class="form-element">
+        <p>Impulsive</p>
+        <input type="number" placeholder="0" name="impulsive" value="0"/>
+      </div>
+
+      <div class="form-element">
+        <p>SS</p>
+        <input type="number" placeholder="0" name="ss" value="0"/>
+      </div>
+
+      <div class="form-element">
+        <button id="send-button" class="form-element">Send</button>
+      </div>
+    </form>
+    <script>
+      inputs = document.querySelectorAll("input")
+      for(const el in inputs){
+        inputs.value = 0
+      }
+
+      const formElement = document.querySelector("form");
+      const drugScoreButton = document.getElementById("send-button");
+      drugScoreButton.addEventListener("click", async function (event) {
+        event.preventDefault();
+        const res = await fetch("/api", {
+          method: "POST",
+          body: new FormData(formElement),
+        });
+        const textJSON = await res.json();
+        const text = textJSON["prediction"];
+        if(parseInt(text) > 0){
+          window.alert("The model predicts that you have taken at least : "+text+" illegal drugs !!! You will be reported to the police immediately >:-( ")}
+        else{
+          window.alert("Congratulations ! You have never taken any illegal substances. You are clear to go. :^)")
+        }
+      });
+    </script>
+
+  </body>
+</html>
