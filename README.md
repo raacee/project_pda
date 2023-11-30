@@ -1,5 +1,5 @@
 Dataset : https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified  
-Colab : https://colab.research.google.com/drive/1e9XAv64m-d595DuDvvwU4sjpR8YZCzCz?usp=sharing
+Notebook is in the repo
 
 # Python data analysis project
 ## Psychologic tendency to try drugs
