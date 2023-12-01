@@ -21,3 +21,5 @@ It also had two more points :
 - Impulsivity
 
 Our job on this dataset was to highlight relations that could exist between these substances to a psychological trait, if there was. We then worked to build a machine learning prediction model that could predict the number of illegal drugs someone would have taken throughout their life.
+
+To start the flask app, cd into the pda_api folder and run ```flask run``` or if you are using poetry ```poetry run flask run```
