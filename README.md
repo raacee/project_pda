@@ -5,7 +5,7 @@ PPT : https://github.com/raacee/project_pda/blob/main/PDA_PPT_DAMECHLI_Racel_CAR
 # Python data analysis project
 ## Psychologic tendency to try drugs
 
-This project is presented by Clement CARRON, Anahide CORLAY and Racel DAMECHLI
+This project is presented by Clement CARON, Anahide CORLAY and Racel DAMECHLI
 
 We have selected a dataset on drug consumption and psychological tendencies. 
 The dataset contained data on the individuals' personality scores and their drug consumption.
